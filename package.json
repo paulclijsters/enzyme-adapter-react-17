@@ -8,7 +8,7 @@
     "build": "babel --source-maps=both src -d build",
     "clean": "rimraf build",
     "lint": "eslint --ext js,jsx .",
-    "prepack": "yarn clean && yarn build",
+    "prepare": "yarn clean && yarn build",
     "test": "yarn lint",
     "watch": "yarn build -w"
   },
